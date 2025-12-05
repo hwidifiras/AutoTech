@@ -1,7 +1,30 @@
 import React from 'react';
 
 import { Icon } from '@chakra-ui/react';
-import { MdDashboard, MdHome, MdLock, MdOutlineShoppingCart } from 'react-icons/md';
+import { 
+  MdDashboard, 
+  MdHome, 
+  MdLock, 
+  MdOutlineShoppingCart,
+  MdInventory,
+  MdSearch,
+  MdReceipt,
+  MdBusiness,
+  MdPeople,
+  MdDescription,
+  MdAccountBalance,
+  MdSettings,
+} from 'react-icons/md';
+
+// AutoPartsFlow Imports
+import AutoPartsDashboard from 'views/admin/autoparts/dashboard';
+import AutoPartsStock from 'views/admin/autoparts/stock';
+import AutoPartsFinder from 'views/admin/autoparts/finder';
+import AutoPartsSales from 'views/admin/autoparts/sales';
+import AutoPartsSuppliers from 'views/admin/autoparts/suppliers';
+import AutoPartsClients from 'views/admin/autoparts/clients';
+import AutoPartsOrders from 'views/admin/autoparts/orders';
+import AutoPartsFinance from 'views/admin/autoparts/finance';
 
 // Admin Imports
 import DashboardsDefault from 'views/admin/dashboards/default';
@@ -62,6 +85,71 @@ import VerificationCentered from 'views/auth/verification/VerificationCentered.j
 import VerificationDefault from 'views/auth/verification/VerificationDefault.jsx';
 
 const routes = [
+  // --- AutoPartsFlow ---
+  {
+    name: 'AutoPartsFlow',
+    path: '/autoparts',
+    icon: <Icon as={MdOutlineShoppingCart} width="20px" height="20px" color="inherit" />,
+    collapse: true,
+    items: [
+      {
+        name: 'Dashboard',
+        layout: '/admin',
+        path: '/autoparts/dashboard',
+        icon: <Icon as={MdDashboard} width="20px" height="20px" color="inherit" />,
+        component: <AutoPartsDashboard />,
+      },
+      {
+        name: 'Gestion Stock',
+        layout: '/admin',
+        path: '/autoparts/stock',
+        icon: <Icon as={MdInventory} width="20px" height="20px" color="inherit" />,
+        component: <AutoPartsStock />,
+      },
+      {
+        name: 'Recherche Pièces',
+        layout: '/admin',
+        path: '/autoparts/finder',
+        icon: <Icon as={MdSearch} width="20px" height="20px" color="inherit" />,
+        component: <AutoPartsFinder />,
+      },
+      {
+        name: 'Ventes',
+        layout: '/admin',
+        path: '/autoparts/sales',
+        icon: <Icon as={MdReceipt} width="20px" height="20px" color="inherit" />,
+        component: <AutoPartsSales />,
+      },
+      {
+        name: 'Fournisseurs',
+        layout: '/admin',
+        path: '/autoparts/suppliers',
+        icon: <Icon as={MdBusiness} width="20px" height="20px" color="inherit" />,
+        component: <AutoPartsSuppliers />,
+      },
+      {
+        name: 'Clients',
+        layout: '/admin',
+        path: '/autoparts/clients',
+        icon: <Icon as={MdPeople} width="20px" height="20px" color="inherit" />,
+        component: <AutoPartsClients />,
+      },
+      {
+        name: 'Commandes',
+        layout: '/admin',
+        path: '/autoparts/orders',
+        icon: <Icon as={MdDescription} width="20px" height="20px" color="inherit" />,
+        component: <AutoPartsOrders />,
+      },
+      {
+        name: 'Finance',
+        layout: '/admin',
+        path: '/autoparts/finance',
+        icon: <Icon as={MdAccountBalance} width="20px" height="20px" color="inherit" />,
+        component: <AutoPartsFinance />,
+      },
+    ],
+  },
   // --- Dashboards ---
   {
     name: 'Dashboards',

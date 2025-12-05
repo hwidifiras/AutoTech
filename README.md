@@ -4,6 +4,36 @@
 [![GitHub issues open](https://img.shields.io/github/issues/horizon-ui/horizon-ui-chakra-pro.svg?maxAge=2592000)](https://github.com/horizon-ui/horizon-ui-chakra-pro/issues?q=is%3Aopen+is%3Aissue)
 [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/horizon-ui/horizon-ui-chakra-pro.svg?maxAge=2592000)](https://github.com/horizon-ui/horizon-ui-chakra-pro/issues?q=is%3Aissue+is%3Aclosed)
 
+---
+
+## 🚗 AutoPartsFlow - SaaS Demo
+
+**AutoPartsFlow** est une démo complète d'un SaaS de gestion de pièces détachées automobiles, construite avec Horizon Chakra UI Pro.
+
+### 🎯 Fonctionnalités
+- 📊 Dashboard avec KPIs et graphiques
+- 🔧 Gestion complète du stock
+- 🔍 Recherche avancée par compatibilité véhicule
+- 💰 Gestion ventes, achats, clients, fournisseurs
+- 📝 Bons de commande et facturation
+- 💵 Vue financière globale
+
+### 🚀 Démarrage Rapide
+```bash
+npm install
+npm start
+```
+
+Accédez à AutoPartsFlow via le menu sidebar: **AutoPartsFlow** → **Dashboard**
+
+### 📚 Documentation Complète
+- 📖 [Guide Démarrage Rapide](./QUICKSTART.md)
+- 📘 [Documentation Complète](./AUTOPARTSFLOW_README.md)
+- 📋 [Index Documentation](./AUTOPARTSFLOW_INDEX.md)
+- 📝 [Livraison](./LIVRAISON_AUTOPARTSFLOW.md)
+
+---
+
 Get started and build your dream web app with Horizon UI PRO, the most trendiest &
 innovative Premium Admin Template for Chakra UI & React!
 
